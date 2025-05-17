@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HotForex App</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header Navigation -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <div class="container">
+                <a class="navbar-brand" href="#">
+                    <img src="https://assets.onecompiler.app/43hy2qqfp/43hy2jc9h/hotforex-logo.png" alt="HotForex Logo">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><i class="fas fa-home"></i></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">ABOUT</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">PRODUCTS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">ACCOUNTS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">PLATFORMS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">TOOLS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">EDUCATION</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 d-flex align-items-center">
+                    <div class="hero-content">
+                        <h1>HotForex App</h1>
+                        <h2>Your Indispensable Tool</h2>
+                        <p>- Lorem Ipsum is simply dummy text of the printing and</p>
+                        <p>- Lorem Ipsum is simply dummy text of the</p>
+                        <p>- Lorem Ipsum is simply dummy text of the printing</p>
+                        <div class="app-buttons mt-4">
+                            <a href="#" class="me-2">
+                                <img src="https://assets.onecompiler.app/43hy2qqfp/43hy2jc9h/download-google-play.png" alt="Get it on Google Play" height="40">
+                            </a>
+                            <a href="#" class="me-2">
+                                <img src="https://assets.onecompiler.app/43hy2qqfp/43hy2jc9h/download-app-store.png" alt="Download on the App Store" height="40">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="hero-image">
+                        <!-- Placeholder for hero image showing mobile devices -->
+                        <img src="https://assets.onecompiler.app/43hy2qqfp/43hy2jc9h/hero-img.png" alt="HotForex App on Mobile Devices" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Registration Form Section -->
+    <section class="registration">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-10">
+                    <form id="registrationForm">
+                        <div class="row">
+                            <div class="col-md-3 mb-3">
+                                <input type="text" class="form-control" id="firstName" placeholder="First Name" required>
+                            </div>
+                            <div class="col-md-3 mb-3">
+                                <input type="text" class="form-control" id="lastName" placeholder="Last Name" required>
+                            </div>
+                            <div class="col-md-3 mb-3">
+                                <input type="email" class="form-control" id="email" placeholder="Email" required>
+                                <div class="invalid-feedback">Please enter a valid email address.</div>
+                            </div>
+                            <div class="col-md-3 mb-3">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="privacyCheck" required>
+                                    <label class="form-check-label" for="privacyCheck">
+                                        I have read and accepted the privacy policy
+                                    </label>
+                                    <div class="policy-links">
+                                        <a href="#">Terms of Use</a> & <a href="#">Cookie Policy</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-3 mb-3">
+                                <select class="form-select" id="countrySelect" required>
+                                    <option value="" selected disabled>Country of Residence</option>
+                                    <option value="US" data-code="+1">United States</option>
+                                    <option value="GB" data-code="+44">United Kingdom</option>
+                                    <option value="BR" data-code="+55">Brazil</option>
+                                </select>
+                            </div>
+                            <div class="col-md-3 mb-3">
+                                <div class="input-group">
+                                    <span class="input-group-text" id="countryCode">+</span>
+                                    <input type="tel" class="form-control" id="phoneNumber" placeholder="Phone Number" required>
+                                </div>
+                            </div>
+                            <div class="col-md-3 mb-3">
+                                <select class="form-select" id="currencySelect" required>
+                                    <option value="" selected disabled>USD</option>
+                                    <option value="USD">USD</option>
+                                    <option value="EUR">EUR</option>
+                                    <option value="GBP">GBP</option>
+                                </select>
+                            </div>
+                            <div class="col-md-3 mb-3">
+                                <button type="submit" class="btn btn-danger w-100">REGISTER NOW</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+<section class="features">
+        <div class="container">
+            <h2>This is dummy text</h2>
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="feature-card">
+                                <div class="feature-icon">
+                                    <i class="fas fa-users text-danger"></i>
+                                </div>
+                                <p>It is a long established fact that a reader</p>
+                            </div>
+                            
+                            <div class="feature-card">
+                                <div class="feature-icon">
+                                    <i class="fas fa-money-bill-wave text-danger"></i>
+                                </div>
+                                <p>It is a long established fact that a reader</p>
+                            </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="phones-image">
+                        <img src="https://assets.onecompiler.app/43hy2qqfp/43hy2jc9h/smartphone-mockup.png" alt="Mobile Phones" class="img-fluid">
+                    </div>
+                </div>
+                <div class="col-md-3">
+                              <div class="feature-card">
+                                <div class="feature-icon">
+                                    <i class="fas fa-network-wired text-danger"></i>
+                                </div>
+                                <p>The standard chunk of Lorem Ipsum</p>
+                            </div>
+                            
+                            <div class="feature-card">
+                                <div class="feature-icon">
+                                    <i class="fas fa-chart-line text-danger"></i>
+                                </div>
+                                <p>The standard chunk of Lorem Ipsum</p>
+                            </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    </section>
+
+    <!-- App Info Section -->
+    <section class="app-info">
+        <div class="container-info">
+            <div class="row">
+                <div class="col-md-6 app-info-mobile">
+                    <img src="https://assets.onecompiler.app/43hy2qqfp/43hy2jc9h/mobile-app-screenshots.png" alt="Mobile App Screenshots" class="img-fluid">
+                </div>
+                <div class="col-md-6 d-flex align-items-center">
+                    <div class="info-content">
+                        <h2>What is Lorem Ipsum?</h2>
+                        <h3>Lorem Ipsum is simply dummy</h3>
+                        
+                        <div class="passage">
+                            <h4>Lorem Ipsum passage</h4>
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+                        </div>
+                        
+                        <div class="passage">
+                            <h4>Lorem Ipsum passage</h4>
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+                        </div>
+                        
+                        <div class="passage">
+                            <h4>Lorem Ipsum passage</h4>
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Download Section -->
+    <section class="download">
+        <div class="container text-center">
+            <p>Contrary to popular belief, Lorem Ipsum is not simply random text.</p>
+            <p>It has roots in a piece of classical Latin literature from 45 BC,</p>
+            <p>making it over 2000 years old.</p>
+            <h3>DOWNLOAD IT NOW!</h3>
+            <div class="app-buttons mt-4">
+                <a href="#" class="me-2">
+                    <img src="https://assets.onecompiler.app/43hy2qqfp/43hy2jc9h/download-google-play.png" alt="Get it on Google Play" height="40">
+                </a>
+                <a href="#">
+                    <img src="https://assets.onecompiler.app/43hy2qqfp/43hy2jc9h/download-app-store.png" alt="Download on the App Store" height="40">
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-center awards">
+                    <p><i class="fas fa-trophy"></i> Winner of 19 Industry Awards</p>
+                </div>
+            </div>
+            
+            <div class="row mt-4">
+                <div class="col-md-3">
+                    <h5>CONTACT US</h5>
+                    <ul class="list-unstyled">
+                        <li><i class="fas fa-envelope text-danger"></i> support@hfx.com</li>
+                        <li><i class="fas fa-phone text-danger"></i> +357-24-400188</li>
+                        <li><i class="fas fa-comments text-danger"></i> Live Chat</li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h5>ABOUT</h5>
+                    <ul class="list-unstyled">
+                        <li>About HotForex</li>
+                        <li>Why HotForex</li>
+                        <li>Regulation and License</li>
+                        <li>Security of Funds</li>
+                        <li>Awards</li>
+                    </ul>
+                </div>
+                <div class="col-md-2">
+                    <h5>PRODUCTS</h5>
+                    <ul class="list-unstyled">
+                        <li>Forex</li>
+                        <li>Shares and CFD</li>
+                        <li>Metals</li>
+                        <li>Indices</li>
+                        <li>Premium CFDs</li>
+                    </ul>
+                </div>
+                <div class="col-md-2">
+                    <h5>TRADING</h5>
+                    <ul class="list-unstyled">
+                        <li>Trading Tools</li>
+                        <li>Forex Education</li>
+                        <li>Partnerships</li>
+                        <li>Account Types</li>
+                        <li>Executive Analysis</li>
+                    </ul>
+                </div>
+                <div class="col-md-2">
+                    <h5>PROMOTIONS</h5>
+                    <ul class="list-unstyled">
+                        <li>Loyalty Program</li>
+                        <li>Bonus Offerings</li>
+                        <li>Cashback Rebates</li>
+                        <li>Free Trading</li>
+                        <li>Deposit</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="row mt-3">
+                <div class="col-md-12 social-icons text-end">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                    <a href="#"><i class="fab fa-telegram-plane"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- jQuery and Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+</body>
+</html>

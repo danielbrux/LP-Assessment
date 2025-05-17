@@ -1,0 +1,283 @@
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    overflow-x: hidden;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 500;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Header Styles */
+header {
+    background-color: #000;
+}
+
+.navbar {
+    padding: 15px 0;
+}
+
+.navbar-brand img {
+    height: 40px;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: #fff;
+    font-size: 14px;
+    margin-left: 10px;
+    font-weight: 500;
+}
+
+/* Hero Section */
+.hero {
+  position: relative;
+  width: 100%;
+  height: 340px; 
+  background-color: #1a2640; 
+  color: white;
+  padding: 40px 40px 40px 40px;
+  overflow: hidden;
+  display: flex;
+  }
+
+.hero-content h1 {
+    font-size: 36px;
+    margin-left: 40px;
+    margin-bottom: 10px;
+}
+
+.hero-content h2 {
+    font-size: 26px;
+    margin-bottom: 20px;
+    font-weight: 300;
+}
+
+.hero-content p {
+      margin-bottom: 6px;
+    font-size: 12px;
+}
+
+.hero-image img {
+  height: 300px;
+}
+
+.app-buttons img {
+    height: 40px;
+}
+
+
+
+/* Registration Form Section */
+.registration {
+    background-color: #f9f9f9;
+    padding: 30px 0;
+}
+
+.form-control, .form-select {
+    padding: 12px 15px;
+    border-radius: 0;
+    height: auto;
+    font-size: 14px;
+}
+
+.form-check-label {
+    font-size: 12px;
+}
+
+.policy-links {
+    font-size: 12px;
+}
+
+.policy-links a {
+    color: #dc3545;
+}
+
+.input-group-text {
+    background-color: #f8f9fa;
+    border-radius: 0;
+}
+
+.btn-danger {
+    background-color: #dc3545;
+    border-radius: 0;
+    padding: 12px 15px;
+    font-weight: 500;
+}
+
+/* Features Section */
+
+.container {
+    margin-bottom: 10px;
+    }
+    
+
+
+.features {
+    padding: 60px 0;
+    background: url('https://via.placeholder.com/1920x600/f5f5f5') no-repeat center center;
+    background-size: cover;
+}
+
+.phones-image img {
+    max-width: 50%;
+    height: auto;
+    display: block;
+  margin: 50px;
+}
+
+
+.features h3 {
+    margin-bottom: 30px;
+}
+
+.feature-card {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.feature-icon {
+    font-size: 40px;
+    color: #dc3545;
+    margin-bottom: 15px;
+}
+
+.feature-card p {
+    font-size: 14px;
+    align-content: center;
+}
+
+/* App Info Section */
+.app-info {
+    padding: 80px 0;
+    background-color: #1a2640;
+    color: #fff;
+}
+
+.info-content {
+    padding: 0px 20px;
+}
+
+.info-content h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.info-content h3 {
+    font-size: 22px;
+    margin-bottom: 30px;
+    font-weight: 300;
+}
+
+.passage {
+    margin-bottom: 30px;
+}
+
+.passage h4 {
+    color: #dc3545;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.passage p {
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+/* Download Section */
+.download {
+    padding: 60px 0;
+    background-color: #f9f9f9;
+}
+
+.download p {
+    margin-bottom: 5px;
+    font-size: 16px;
+}
+
+.download h3 {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 20px 0;
+}
+
+/* Footer */
+footer {
+    background-color: #111;
+    color: #fff;
+    padding: 40px 0 20px;
+}
+
+footer h5 {
+    font-size: 16px;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+footer ul li {
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+.awards {
+    margin-bottom: 20px;
+}
+
+.awards i {
+    color: #dc3545;
+    margin-right: 10px;
+}
+
+.social-icons a {
+    color: #fff;
+    margin-left: 15px;
+    font-size: 18px;
+}
+
+/* Responsive Styles */
+@media (max-width: 991px) {
+    .navbar-nav {
+        text-align: center;
+        margin-top: 15px;
+    }
+    
+    .navbar-dark .navbar-nav .nav-link {
+        margin-left: 0;
+        padding: 10px 0;
+    }
+    
+    .hero-content {
+        text-align: center;
+        margin-bottom: 30px;
+    }
+    
+    .info-content {
+        text-align: center;
+        margin-top: 30px;
+    }
+}
+
+@media (max-width: 767px) {
+    .hero {
+        padding: 50px 0;
+        margin-top: 30px;
+    }
+    
+    .feature-card {
+        margin-bottom: 40px;
+    }
+    
+    footer h5 {
+        margin-top: 30px;
+    }
+    
+    .social-icons {
+        text-align: center;
+        margin-top: 30px;
+    }
+}
